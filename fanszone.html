@@ -140,7 +140,7 @@
             <div class="form-group row" style="margin-top: 20px;">
                 <label for="name" class="col-sm-2 col-form-label" name="name">Name</label>
             <div class="col-sm-10">
-                <input type="text" class="form-control" id="name" required>
+                <input type="text" class="form-control" name="name" id="name" required>
                 <div class="invalid-feedback">
                   <p>Please enter your name.</p>
                 </div>
@@ -150,7 +150,7 @@
             <div class="form-group row" style="margin-top: 20px;">
                 <label for="phone" class="col-sm-2 col-form-label" name="phone">Phone</label>
             <div class="col-sm-10">
-                <input type="number" class="form-control" id="phone" required>
+                <input type="number" class="form-control" name="phone" id="phone" required>
                 <div class="invalid-feedback">
                     <p>Please enter your phone number.</p>
                   </div>
@@ -161,7 +161,7 @@
             <div class="form-group row" style="margin-top: 20px;">
               <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
               <div class="invalid-feedback">
                 <p>Please enter your email address.</p>
               </div>
@@ -172,7 +172,7 @@
             <div class="form-group row" style="margin-top: 20px;">
                 <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label" name="message">Leave a Message</label>
             <div class="col-sm-10">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="message" rows="10" required></textarea>
             </div>
             </div>
           <button id="submit" type="submit" class="btn btn-danger btn-lg" style="background-color: #ff0032; margin: 20px;" onclick="myFunction()" value="send">Send</button>
