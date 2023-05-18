@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/978d32a647.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>FansZone</title>
     <style>
         body{
             font-family: 'Inconsolata', monospace;
@@ -71,12 +71,14 @@
             color:#00fF2c;
             text-decoration: none;
         }
-        .video{
-            position: flex;
+        .form-group{
+            font-family: 'Source Code Pro', monospace;
+            position: relative;
             width: auto;
             max-width: 1200px;
             margin: 0 auto;
-            padding: 50px 50px;
+            padding: 0 15px;
+            font-size: x-large;
         }
         footer{
             height:60px;
@@ -119,120 +121,95 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">  
             <ul class="navbar-nav mr-auto justify-content-center"> 
-                <li><a style="color: #ff0032" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="artprints.html">ArtPrints</a></li>
                 <li><a href="tours.html">Tours</a></li>
-                <li><a href="fanszone.html">FansZone</a></li>
+                <li><a style="color: #ff0032" href="fanszone.html">FansZone</a></li>
             </ul>
         </div>
     </nav>
-    <section class="video">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="image/video.mp4"allowfullscreen type="Anima Video"></iframe>
-
-    </div>
-    </section>
-
     <div class="container">
-        <div class="row">
-            <div class="col">
-            <h3>Thomas Edward Yorke</h3>
-            <h4>Date of Birth: 7 October 1968</h4>
-            <p>He is an English musician and the vocalist and songwriter.</p>
-            <p>Rolling Stone describe he is one of the greatest and most influential singers of his generation.</p>
+        <h3>Just feel free to leave us message:</h3>
+        <h3>Whether any enquires,</h3>
+        <h3>any comments,</h3>
+        <h3>or how much you love Thom Yorke.</h3>
+        <h3 style="margin-bottom: 20px;">May be we could meet in this planet.</h3>
+        <form action="cobonut@hotmail.com" method="send" name="emailform" class="needs-validation" novalidate>
+            <div class="form-group row">
+                <label for="name" class="col-sm-2 col-form-label" name="name">Name</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">
+                  <p>Please enter your name.</p>
+                </div>
             </div>
-        </div>
-    </div>
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>1992,</p> 
-        </div>
-        <div class="col-10">
-            <p>debut single, "Creep", made Yorke a celebrity, albums sold over 30 million.</p>
-        </div>
-    </div>
-</div>
+            <div class="form-group row">
+                <label for="phone" class="col-sm-2 col-form-label" name="phone">Phone</label>
+            <div class="col-sm-10">
+                <input type="number" class="form-control" id="phone" required>
+                <div class="invalid-feedback">
+                    <p>Please enter your phone number.</p>
+                  </div>
+                <small id="phone" class="form-text text-muted" style="font-size: small;">We'll never share your phone with anyone else.</small>
+            </div>
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2000,</p>
-        </div>
-        <div class="col-10">
-            <p>“Kid A” Yorke moved into electronic music. With the artist Stanley Donwood, Yorke creates artwork for Radiohead albums and his other projects.  He often incorporates "erratic" dancing into his performances.</p>
-        </div>
-    </div>
-</div>
+            <div class="form-group row">
+              <label for="exampleInputEmail1" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
+              <div class="invalid-feedback">
+                <p>Please enter your email address.</p>
+              </div>
+              <small id="emailHelp" class="form-text text-muted" style="font-size: small;">We'll never share your email with anyone else.</small>
+            </div>
+            </div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2006,</p>
-        </div>
-        <div class="col-10">
-            <p>Yorke's debut solo album, The Eraser.</p>
-        </div>
+            <div class="form-group row">
+                <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label" name="message">Leave a Message</label>
+            <div class="col-sm-10">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" required></textarea>
+            </div>
+            </div>
+          <button id="submit" type="submit" class="btn btn-danger btn-lg" style="background-color: #ff0032; margin: 20px;" onclick="myFunction()" value="send">Send</button>
+          <h1 id="confirm"></h1>
+        </form>
     </div>
-</div>
+        <script>
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2009,</p>
-        </div>
-        <div class="col-10">
-            <p>He formed a new band to perform, Atoms for Peace, with musicians including the Red Hot Chili Peppers bassist Flea and the Radiohead producer Nigel Godrich.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2019,</p>
-        </div>
-        <div class="col-10">
-            <p>Radiohead was inducted into the Rock and Roll Hall of Fame.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2021,</p>
-        </div>
-        <div class="col-10">
-            <p>Yorke debuted a new band, the Smile, with the Radiohead guitarist Jonny Greenwood and the jazz drummer Tom Skinner.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2022,</p>
-        </div>
-        <div class="col-10">
-            <p>They released an album, A Light for Attracting Attention.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <p>Yorke is an activist on : human rights, animal rights, environmental and anti-war causes, and his lyrics incorporate political themes.</p>
-            <p>He has been critical of the music industry, particularly of major labels and streaming services such as Spotify.</p>
-            <p>With Radiohead and his solo work, he has pioneered alternative release platforms such as pay-what-you-want and BitTorrent.</p>
-        </div>
-    </div>
-</div>
-
-<footer>
+    <script>
+        function myFunction() {
+        var txt;
+        if (confirm("Are you ready to submit?")) {
+            txt = "Your message has been submitted";
+        } 
+        else {
+            txt = "Tell me please!";
+        }
+        document.getElementById("confirm").innerHTML = txt;
+        }
+    </script>
+  
+    <footer>
         <div class="container">
             <div class="copyright">
                 <p>The copyright &copy; for Educational use only by Man Wa Chu 2023</p>
@@ -244,8 +221,6 @@
                 <br>
             </div>
         </div>
-    </footer>    
-
+    </footer>   
 </body>
 </html>
-

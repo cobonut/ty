@@ -15,7 +15,7 @@
     <script src="https://kit.fontawesome.com/978d32a647.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
-    <title>Home</title>
+    <title>Tours</title>
     <style>
         body{
             font-family: 'Inconsolata', monospace;
@@ -71,13 +71,19 @@
             color:#00fF2c;
             text-decoration: none;
         }
-        .video{
-            position: flex;
-            width: auto;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 50px 50px;
+        .zoom {
+            padding: 0 auto;
+            transition: transform .2s;
+            width: 200px;
+            height: 200px;
+            margin: 60px auto;
         }
+
+        .zoom:hover {
+            -ms-transform: scale(1.5); 
+            -webkit-transform: scale(1.5); 
+            transform: scale(1.5); 
+}
         footer{
             height:60px;
             background-color: #ffffff;
@@ -119,120 +125,115 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">  
             <ul class="navbar-nav mr-auto justify-content-center"> 
-                <li><a style="color: #ff0032" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="music.html">Music</a></li>
                 <li><a href="artprints.html">ArtPrints</a></li>
-                <li><a href="tours.html">Tours</a></li>
+                <li><a style="color: #ff0032" href="tours.html">Tours</a></li>
                 <li><a href="fanszone.html">FansZone</a></li>
             </ul>
         </div>
     </nav>
-    <section class="video">
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="image/video.mp4"allowfullscreen type="Anima Video"></iframe>
-
-    </div>
-    </section>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-            <h3>Thomas Edward Yorke</h3>
-            <h4>Date of Birth: 7 October 1968</h4>
-            <p>He is an English musician and the vocalist and songwriter.</p>
-            <p>Rolling Stone describe he is one of the greatest and most influential singers of his generation.</p>
-            </div>
-        </div>
-    </div>
-
 <div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>1992,</p> 
-        </div>
-        <div class="col-10">
-            <p>debut single, "Creep", made Yorke a celebrity, albums sold over 30 million.</p>
-        </div>
-    </div>
-</div>
+    <p style="text-align: center;">2023</p>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Jun</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">21</th>
+            <td>Auditorio Nacional, Mexico City, Mexico</td>
+          </tr>
+          <tr>
+            <th scope="row">22</th>
+            <td>Auditorio Nacional, Mexico City, Mexico</td>
+          </tr>
+          <tr>
+            <th scope="row">25</th>
+            <td>ACL Live at The Moody Theater, Austin, TX, US</td>
+          </tr>
+          <tr>
+            <th scope="row">26</th>
+            <td>ACL Live at The Moody Theater, Austin, TX, US</td>
+          </tr>
+          <tr>
+            <th scope="row">29</th>
+            <td>James L Knight Center, Miami, FL, US</td>
+          </tr>
+          <tr>
+            <th scope="row">30</th>
+            <td>The Saint Augustine Amphitheatre, St Augustine, FL, US</td>
+          </tr>
+        </tbody>
+    </table>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2000,</p>
-        </div>
-        <div class="col-10">
-            <p>“Kid A” Yorke moved into electronic music. With the artist Stanley Donwood, Yorke creates artwork for Radiohead albums and his other projects.  He often incorporates "erratic" dancing into his performances.</p>
-        </div>
-    </div>
-</div>
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">Jul</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">2</th>
+            <td>North Charlestin Performing Arts Cener, North Charleston, SC, US</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Thomas Wolfe Auditorium, Ashevillem, NCM, US</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>The National, Richmond, VA, US</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Forest Hills Stadium, Forest Hills, NY, US</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Frankin Music Hall, Philadelphia, PA, US</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Stage AE, Pittsburgh, PA, US</td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Agora Ballroom, Cleveland, OH, US</td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Festival dete de Quebec, Parc de la Francophonie, Quebec City, Canada</td>
+          </tr>
+          <th scope="row">15</th>
+          <td>Place Bill, Laval, QC, Canada</td>
+        </tr>
+        <tr>
+          <th scope="row">16</th>
+          <td>RBC Bluesfest, LeBreton Flats, Ottawa, Ontario, Canada</td>
+        </tr>
+        <tr>
+          <th scope="row">19</th>
+          <td>Midland Theatre, Kansas City, MO, US</td>
+        </tr>
+        <tr>
+          <th scope="row">20</th>
+          <td>The Factory, Chesterfield, MO, US</td>
+        </tr>
+        <tr>
+            <th scope="row">21</th>
+            <td>Pitchfork Music Festival, Union Park, Chicago, IL, US</td>
+          </tr>
+        </tbody>
+    </table>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2006,</p>
-        </div>
-        <div class="col-10">
-            <p>Yorke's debut solo album, The Eraser.</p>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2009,</p>
-        </div>
-        <div class="col-10">
-            <p>He formed a new band to perform, Atoms for Peace, with musicians including the Red Hot Chili Peppers bassist Flea and the Radiohead producer Nigel Godrich.</p>
-        </div>
-    </div>
+    <button type="button" class="btn btn-danger btn-lg" style="background-color: #ff0032;margin: 20px;">Buy Now</button>
 </div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2019,</p>
-        </div>
-        <div class="col-10">
-            <p>Radiohead was inducted into the Rock and Roll Hall of Fame.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2021,</p>
-        </div>
-        <div class="col-10">
-            <p>Yorke debuted a new band, the Smile, with the Radiohead guitarist Jonny Greenwood and the jazz drummer Tom Skinner.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-1">
-            <p>2022,</p>
-        </div>
-        <div class="col-10">
-            <p>They released an album, A Light for Attracting Attention.</p>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <p>Yorke is an activist on : human rights, animal rights, environmental and anti-war causes, and his lyrics incorporate political themes.</p>
-            <p>He has been critical of the music industry, particularly of major labels and streaming services such as Spotify.</p>
-            <p>With Radiohead and his solo work, he has pioneered alternative release platforms such as pay-what-you-want and BitTorrent.</p>
-        </div>
-    </div>
-</div>
-
-<footer>
+    <footer>
         <div class="container">
             <div class="copyright">
                 <p>The copyright &copy; for Educational use only by Man Wa Chu 2023</p>
@@ -244,8 +245,6 @@
                 <br>
             </div>
         </div>
-    </footer>    
-
+    </footer>   
 </body>
 </html>
-
