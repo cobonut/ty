@@ -116,10 +116,12 @@
     <section class="header">
         <img src="image/logo.png" alt="Thom Yorke">
     </section>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">  
             <ul class="navbar-nav mr-auto justify-content-center"> 
                 <li><a href="index.html">Home</a></li>
@@ -129,7 +131,9 @@
                 <li><a style="color: #ff0032" href="fanszone.html">FansZone</a></li>
             </ul>
         </div>
-    </nav>
+        </nav>
+    </div>
+
     <div class="container">
         <h3 style="text-align: center;">Just feel free to leave us message:</h3>
         <h3 style="text-align: center;">Whether any enquires,</h3>
@@ -141,7 +145,6 @@
             <input type="text" name="_honey" style="display: none;">
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://cobonut.github.io/ty/sendform.html">
-
             <div class="form-group row" style="margin-top: 20px;">
                 <label for="name" class="col-sm-2 col-form-label" name="name">Name</label>
             <div class="col-sm-10">
@@ -158,8 +161,8 @@
                 <input type="tel" class="form-control" name="phone" id="phone" required>
                 <div class="invalid-feedback">
                     <p>Please enter your phone number.</p>
-                  </div>
-                <small id="phone" class="form-text text-muted" style="font-size: small;">We'll never share your phone with anyone else.</small>
+                </div>
+                    <small id="phone" class="form-text text-muted" style="font-size: small;">We'll never share your phone with anyone else.</small>
             </div>
             </div>
 
@@ -184,6 +187,7 @@
           <h1 id="confirm"></h1>
         </form>
     </div>
+    
         <script>
             (function() {
               'use strict';
